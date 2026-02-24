@@ -730,14 +730,127 @@
     </div>
 
     <div class="chatbot-embed" id="chatbot-container">
-      <img class="scene-photo"
-           src="https://images.aeonmedia.co/images/41f410c0-1013-492f-908f-d0e89c740f1c/final-akg4446623.jpeg?top=836&left=0&cropWidth=2416&cropHeight=1359&width=3840&quality=75&format=auto"
-           alt="Carl Jung in his study"
-           onerror="this.style.display='none'" />
-      <span class="scene-caption">Carl Gustav Jung &nbsp;·&nbsp; Küsnacht, Switzerland &nbsp;·&nbsp; c. 1910</span>
+      <!-- Red Book inspired mandala -->
+      <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%;opacity:0.55;">
+        <rect width="500" height="500" fill="#0D0A0B"/>
+        <!-- Outer glow -->
+        <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#6B1E2E" stop-opacity="0.4"/>
+          <stop offset="60%" stop-color="#1C0A10" stop-opacity="0.2"/>
+          <stop offset="100%" stop-color="#0D0A0B" stop-opacity="0"/>
+        </radialGradient>
+        <circle cx="250" cy="250" r="250" fill="url(#glowGrad)"/>
+
+        <!-- Outer decorative ring -->
+        <circle cx="250" cy="250" r="230" fill="none" stroke="rgba(184,147,74,0.15)" stroke-width="1"/>
+        <circle cx="250" cy="250" r="218" fill="none" stroke="rgba(184,147,74,0.08)" stroke-width="0.5"/>
+
+        <!-- Outer petal ring — 16 petals, elongated -->
+        <g fill="none" stroke="rgba(107,30,46,0.7)" stroke-width="1.2">
+          <ellipse cx="250" cy="60"  rx="12" ry="38" transform="rotate(0 250 250)"/>
+          <ellipse cx="250" cy="60"  rx="12" ry="38" transform="rotate(22.5 250 250)"/>
+          <ellipse cx="250" cy="60"  rx="12" ry="38" transform="rotate(45 250 250)"/>
+          <ellipse cx="250" cy="60"  rx="12" ry="38" transform="rotate(67.5 250 250)"/>
+          <ellipse cx="250" cy="60"  rx="12" ry="38" transform="rotate(90 250 250)"/>
+          <ellipse cx="250" cy="60"  rx="12" ry="38" transform="rotate(112.5 250 250)"/>
+          <ellipse cx="250" cy="60"  rx="12" ry="38" transform="rotate(135 250 250)"/>
+          <ellipse cx="250" cy="60"  rx="12" ry="38" transform="rotate(157.5 250 250)"/>
+          <ellipse cx="250" cy="60"  rx="12" ry="38" transform="rotate(180 250 250)"/>
+          <ellipse cx="250" cy="60"  rx="12" ry="38" transform="rotate(202.5 250 250)"/>
+          <ellipse cx="250" cy="60"  rx="12" ry="38" transform="rotate(225 250 250)"/>
+          <ellipse cx="250" cy="60"  rx="12" ry="38" transform="rotate(247.5 250 250)"/>
+          <ellipse cx="250" cy="60"  rx="12" ry="38" transform="rotate(270 250 250)"/>
+          <ellipse cx="250" cy="60"  rx="12" ry="38" transform="rotate(292.5 250 250)"/>
+          <ellipse cx="250" cy="60"  rx="12" ry="38" transform="rotate(315 250 250)"/>
+          <ellipse cx="250" cy="60"  rx="12" ry="38" transform="rotate(337.5 250 250)"/>
+        </g>
+
+        <!-- Mid geometric ring — 6-pointed star doubled -->
+        <g fill="none" stroke="rgba(184,147,74,0.35)" stroke-width="1">
+          <polygon points="250,105 290,175 370,175 330,245 370,315 290,315 250,385 210,315 130,315 170,245 130,175 210,175"/>
+          <polygon points="250,120 282,178 346,178 314,236 346,294 282,294 250,352 218,294 154,294 186,236 154,178 218,178" opacity="0.5"/>
+        </g>
+
+        <!-- Flame-like pointed petals — Red Book style -->
+        <g fill="rgba(107,30,46,0.3)" stroke="rgba(139,42,62,0.6)" stroke-width="0.8">
+          <path d="M250,150 C260,190 275,210 250,250 C225,210 240,190 250,150Z" transform="rotate(0 250 250)"/>
+          <path d="M250,150 C260,190 275,210 250,250 C225,210 240,190 250,150Z" transform="rotate(45 250 250)"/>
+          <path d="M250,150 C260,190 275,210 250,250 C225,210 240,190 250,150Z" transform="rotate(90 250 250)"/>
+          <path d="M250,150 C260,190 275,210 250,250 C225,210 240,190 250,150Z" transform="rotate(135 250 250)"/>
+          <path d="M250,150 C260,190 275,210 250,250 C225,210 240,190 250,150Z" transform="rotate(180 250 250)"/>
+          <path d="M250,150 C260,190 275,210 250,250 C225,210 240,190 250,150Z" transform="rotate(225 250 250)"/>
+          <path d="M250,150 C260,190 275,210 250,250 C225,210 240,190 250,150Z" transform="rotate(270 250 250)"/>
+          <path d="M250,150 C260,190 275,210 250,250 C225,210 240,190 250,150Z" transform="rotate(315 250 250)"/>
+        </g>
+
+        <!-- Inner decorative rings -->
+        <circle cx="250" cy="250" r="130" fill="none" stroke="rgba(184,147,74,0.3)" stroke-width="1.5"/>
+        <circle cx="250" cy="250" r="118" fill="none" stroke="rgba(184,147,74,0.1)" stroke-width="0.5"/>
+
+        <!-- Inner petal ring — 8 round petals -->
+        <g fill="rgba(184,147,74,0.08)" stroke="rgba(184,147,74,0.45)" stroke-width="1">
+          <ellipse cx="250" cy="155" rx="16" ry="26" transform="rotate(0 250 250)"/>
+          <ellipse cx="250" cy="155" rx="16" ry="26" transform="rotate(45 250 250)"/>
+          <ellipse cx="250" cy="155" rx="16" ry="26" transform="rotate(90 250 250)"/>
+          <ellipse cx="250" cy="155" rx="16" ry="26" transform="rotate(135 250 250)"/>
+          <ellipse cx="250" cy="155" rx="16" ry="26" transform="rotate(180 250 250)"/>
+          <ellipse cx="250" cy="155" rx="16" ry="26" transform="rotate(225 250 250)"/>
+          <ellipse cx="250" cy="155" rx="16" ry="26" transform="rotate(270 250 250)"/>
+          <ellipse cx="250" cy="155" rx="16" ry="26" transform="rotate(315 250 250)"/>
+        </g>
+
+        <!-- Snake/serpent ouroboros ring (Red Book motif) -->
+        <circle cx="250" cy="250" r="88" fill="none" stroke="rgba(107,30,46,0.5)" stroke-width="3" stroke-dasharray="8 4"/>
+        <circle cx="250" cy="250" r="88" fill="none" stroke="rgba(184,147,74,0.15)" stroke-width="1"/>
+
+        <!-- Inner core -->
+        <circle cx="250" cy="250" r="62" fill="rgba(13,10,11,0.8)" stroke="rgba(184,147,74,0.35)" stroke-width="1.5"/>
+
+        <!-- Core 4-petals -->
+        <g fill="rgba(107,30,46,0.4)" stroke="rgba(139,42,62,0.7)" stroke-width="0.8">
+          <ellipse cx="250" cy="207" rx="10" ry="20" transform="rotate(0 250 250)"/>
+          <ellipse cx="250" cy="207" rx="10" ry="20" transform="rotate(90 250 250)"/>
+          <ellipse cx="250" cy="207" rx="10" ry="20" transform="rotate(180 250 250)"/>
+          <ellipse cx="250" cy="207" rx="10" ry="20" transform="rotate(270 250 250)"/>
+        </g>
+
+        <!-- Quaternary cross -->
+        <g stroke="rgba(184,147,74,0.5)" stroke-width="1" fill="none">
+          <line x1="250" y1="225" x2="250" y2="275"/>
+          <line x1="225" y1="250" x2="275" y2="250"/>
+          <line x1="233" y1="233" x2="267" y2="267"/>
+          <line x1="267" y1="233" x2="233" y2="267"/>
+        </g>
+
+        <!-- Center eye / vesica -->
+        <ellipse cx="250" cy="250" rx="18" ry="10" fill="none" stroke="rgba(184,147,74,0.6)" stroke-width="1"/>
+        <circle cx="250" cy="250" r="5" fill="rgba(184,147,74,0.4)" stroke="rgba(184,147,74,0.8)" stroke-width="0.5"/>
+        <circle cx="250" cy="250" r="2" fill="var(--gold, #B8934A)"/>
+
+        <!-- Corner alchemical marks -->
+        <g fill="rgba(184,147,74,0.2)" font-family="serif" font-size="18" text-anchor="middle">
+          <text x="42" y="52">☽</text>
+          <text x="458" y="52">☀</text>
+          <text x="42" y="468">♄</text>
+          <text x="458" y="468">☿</text>
+        </g>
+
+        <!-- Outer text ring -->
+        <g fill="rgba(184,147,74,0.2)" font-family="Cinzel, serif" font-size="6.5" letter-spacing="2.5">
+          <text>
+            <textPath href="#innerTextRing" startOffset="0%">
+              ✦ THE RED BOOK · LIBER NOVUS · THE WAY OF WHAT IS TO COME · IN PRINCIPIO ERAT VERBUM ✦
+            </textPath>
+          </text>
+        </g>
+        <defs>
+          <path id="innerTextRing" d="M 250,18 A 232,232 0 1,1 249.9,18"/>
+        </defs>
+      </svg>
+      <span class="scene-caption">Liber Novus &nbsp;·&nbsp; The Red Book &nbsp;·&nbsp; C.G. Jung &nbsp;·&nbsp; 1915–1930</span>
       <link rel="stylesheet" href="https://jimmyardis.github.io/jane-jacobs-bot/widget/jacobs-widget.css">
       <script src="https://jimmyardis.github.io/jane-jacobs-bot/widget/jacobs-widget.js"
-              data-api-url="https://jane-jacobs-bot-production.up.railway.app"
+              data-api-url="https://lively-perception-production-d9f1.up.railway.app"
               data-persona-id="carl-jung"></script>
     </div>
 
